@@ -1,6 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
+    "cli/trace",
     "policy-controller",
     "policy-controller/core",
     "policy-controller/grpc",

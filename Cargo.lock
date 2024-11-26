@@ -1167,6 +1167,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "linkerd-cli-trace"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "futures",
+ "hyper",
+ "indexmap 2.2.6",
+ "kube",
+ "linkerd-policy-controller-core",
+ "linkerd-policy-controller-grpc",
+ "linkerd-policy-controller-k8s-api",
+ "linkerd2-proxy-api",
+ "serde",
+ "serde_json",
+ "termtree",
+ "tokio",
+ "tokio-stream",
+ "tonic",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
 name = "linkerd-policy-controller"
 version = "0.1.0"
 dependencies = [
@@ -2173,6 +2197,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2047c6ded9c721764247e62cd3b03c09ffc529b2ba5b10ec482ae507a4a70160"
 
 [[package]]
+name = "termtree"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f50febec83f5ee1df3015341d8bd429f2d1cc62bcba7ea2076759d315084683"
+
+[[package]]
 name = "thiserror"
 version = "1.0.66"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2359,7 +2389,10 @@ dependencies = [
  "percent-encoding",
  "pin-project",
  "prost",
+ "rustls",
+ "rustls-pemfile",
  "tokio",
+ "tokio-rustls",
  "tokio-stream",
  "tower",
  "tower-layer",
